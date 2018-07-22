@@ -1,0 +1,14 @@
+﻿@inject IHostingEnvironment HostingEnviroment
+@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>Use this area to provide additional information.</p>
+<environment include="Development">
+    <h5>Development Stage</h5>
+</environment>
+<environment include="Production">
+    <h5>Run In Production server</h5>
+</environment>
